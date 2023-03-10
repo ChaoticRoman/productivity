@@ -22,3 +22,5 @@ alias removeAllContainers='docker rm $(docker ps -a -q)'
 
 alias g='/home/roman/projects/productivity/google-from-bash/google.py'
 alias gpt='/home/roman/projects/productivity/openai/chatgpt.py'
+
+alias gh-repo='gh repo create $(basename $(pwd)) --public --source=. --push --remote=upstream'
