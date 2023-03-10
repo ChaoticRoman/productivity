@@ -6,7 +6,7 @@ My personal productivity tools.
 
 ```
 mkdir projects
-git clone TODO
+git clone git@github.com:ChaoticRoman/productivity.git
 cd productivity
 ln -s /home/roman/projects/productivity/bash_aliases /home/roman/.bash_aliases
 ```
