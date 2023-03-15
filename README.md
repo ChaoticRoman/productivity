@@ -18,7 +18,7 @@ pip install --upgrade pip
 pip install openai
 ```
 
-Expects `openai/.api_key` file with your API key in there. Then `gpt` command should just work.
+Expects `openai/.api_key` file with your [OpenAI API](https://platform.openai.com/account/api-keys) key in there. Then `gpt` command should just work.
 
 ## Google
 
