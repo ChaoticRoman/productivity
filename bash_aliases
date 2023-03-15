@@ -20,7 +20,13 @@ alias listAllContainers='docker container ls -as'
 alias killAllContainers='docker kill $(docker ps -q)'
 alias removeAllContainers='docker rm $(docker ps -a -q)'
 
+alias pruneImages='docker system prune'
+alias pruneImagesHard='docker system prune -a'
+
 alias g='/home/roman/projects/productivity/google-from-bash/google.py'
 alias gpt='/home/roman/projects/productivity/openai/chatgpt.py'
 
 alias gh-repo='gh repo create $(basename $(pwd)) --public --source=. --push --remote=upstream'
+alias gh-pr='gh pr create'
+
+alias up="sudo apt update && sudo apt upgrade && sudo snap refresh"
