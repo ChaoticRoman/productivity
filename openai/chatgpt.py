@@ -13,6 +13,6 @@ with open('.api_key', 'r') as f:
 prompt = " ".join(sys.argv)
 
 response = openai.Completion.create(
-    model=MODEL, prompt=prompt, temperature=0, max_tokens=4000)
+    model=MODEL, prompt=prompt, temperature=0.1, max_tokens=4000)
 
 print(response.choices[0].text.strip())

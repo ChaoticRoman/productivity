@@ -29,4 +29,4 @@ alias gpt='/home/roman/projects/productivity/openai/chatgpt.py'
 alias gh-repo='gh repo create $(basename $(pwd)) --public --source=. --push --remote=upstream'
 alias gh-pr='gh pr create'
 
-alias up="sudo apt update && sudo apt upgrade && sudo snap refresh"
+alias up="sudo apt update && sudo apt upgrade -y && sudo snap refresh"
