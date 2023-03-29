@@ -10,7 +10,7 @@ os.chdir(os.path.dirname(__file__))
 with open('.api_key', 'r') as f:
     openai.api_key = f.read().strip()
 
-prompt = " ".join(sys.argv)
+prompt = " ".join(sys.argv[1:])
 
 response = openai.Completion.create(
     model=MODEL, prompt=prompt, temperature=0.1, max_tokens=4000)
