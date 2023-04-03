@@ -12,27 +12,39 @@ cd productivity
 ln -s /home/roman/projects/productivity/bash_aliases /home/roman/.bash_aliases
 ```
 
-## ChatGPT easy
+# OpenAPI easy toolset
 
-CLI tool that allows to make simple requests to OpenAI without context
+# Installation
 
 ```
 pip install --upgrade pip
 pip install openai
 ```
 
-Expects `openai/.api_key` file with your [OpenAI API](https://platform.openai.com/account/api-keys) key in there. Then `gpt` command should just work:
+Expects `openai/.api_key` file with your [OpenAI API](https://platform.openai.com/account/api-keys) key in there.
+
+## ChatGPT easy
+
+CLI tool that allows to make simple requests to OpenAI without context.
 
 ```
-$ gpt Tell a joke.
-Q: Why did the chicken cross the playground?
+./openai/chatgpt.py Make up some joke
+Q: What did the fish say when it hit the wall?
+A: Dam!
+```
 
-A: To get to the other slide!
+## DALL-E easy
+
+CLI tool to generate an image based on a simple request to DALL-E API.
+
+```
+./openai/dalle.py white siamese cat
+https://oaidalleapiprodscus.blob.core.windows.net/<link to the generated image of size 256x256>
 ```
 
 ## Google search
 
-CLI tool to launch a google request in brave browser
+CLI tool to launch a Google request in brave browser
 
 Expects brave to be your browser.  Then `g` command should open new tab with google prompt:
 
