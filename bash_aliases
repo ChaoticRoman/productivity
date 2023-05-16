@@ -30,3 +30,5 @@ alias gh-repo='gh repo create $(basename $(pwd)) --public --source=. --push --re
 alias gh-pr='gh pr create'
 
 alias up="sudo apt update && sudo apt upgrade -y && sudo snap refresh"
+
+alias timesum='/home/roman/projects/productivity/timesum/timesum.py'
