@@ -26,9 +26,12 @@ alias pruneImagesHard='docker system prune -a'
 alias g='/home/roman/projects/productivity/google-from-bash/google.py'
 alias gpt='/home/roman/projects/productivity/openai/chatgpt.py'
 
+alias gh-repo-lazy='git init && git add . && git commit && gh repo create $(basename $(pwd)) --public --source=. --push --remote=upstream'
 alias gh-repo='gh repo create $(basename $(pwd)) --public --source=. --push --remote=upstream'
 alias gh-pr='gh pr create'
 
 alias up="sudo apt update && sudo apt upgrade -y && sudo snap refresh"
 
 alias timesum='/home/roman/projects/productivity/timesum/timesum.py'
+alias factorio='/home/roman/factorio/bin/x64/factorio'
+alias brave='brave-browser'
