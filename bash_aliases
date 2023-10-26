@@ -24,7 +24,6 @@ alias removeAllContainers='docker rm $(docker ps -a -q)'
 alias pruneImages='docker system prune'
 alias pruneImagesHard='docker system prune -a'
 
-
 # GitHub
 alias gh-repo-lazy='git init && git add . && git commit && gh repo create $(basename $(pwd)) --public --source=. --push --remote=upstream'
 alias gh-repo='gh repo create $(basename $(pwd)) --public --source=. --push --remote=origin'
