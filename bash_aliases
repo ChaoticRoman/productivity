@@ -28,6 +28,7 @@ alias pruneImagesHard='docker system prune -a'
 alias gh-repo-lazy='git init && git add . && git commit && gh repo create $(basename $(pwd)) --public --source=. --push --remote=upstream'
 alias gh-repo='gh repo create $(basename $(pwd)) --public --source=. --push --remote=origin'
 alias gh-pr='gh pr create'
+alias privaterepo='git config user.email "roman.pavelka.asi@gmail.com"'
 
 # Git
 alias my-repo='git config --global user.name "Roman Pavelka" && git config --global user.email "roman.pavelka.asi@gmail.com"'
@@ -37,7 +38,7 @@ alias up="sudo apt update && sudo apt upgrade -y && sudo snap refresh"
 
 # Shortcuts
 alias g='/home/roman/projects/productivity/google-from-bash/google.py'
-alias gpt='/home/roman/projects/productivity/openai/chatgpt.py'
+alias gpt='/home/roman/projects/chatgpt-gui/cli.py'
 alias timesum='/home/roman/projects/productivity/timesum/timesum.py'
 alias factorio='/home/roman/factorio/bin/x64/factorio'
 alias brave='brave-browser'
