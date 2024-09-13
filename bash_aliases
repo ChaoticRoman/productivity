@@ -7,6 +7,7 @@ alias ll='ls -alh --color'
 
 # Python
 alias matplotlib='python3 -i -c "from datetime import datetime as dt;from datetime import timedelta as td;import matplotlib.pyplot as plt;plt.ion()"'
+alias p='python3'
 
 # network troubleshooting
 alias pingg='ping 8.8.8.8'
@@ -29,6 +30,9 @@ alias gh-repo-lazy='git init && git add . && git commit && gh repo create $(base
 alias gh-repo='gh repo create $(basename $(pwd)) --public --source=. --push --remote=origin'
 alias gh-pr='gh pr create'
 alias privaterepo='git config user.email "roman.pavelka.asi@gmail.com"'
+alias workrepo='git config user.email "roman.pavelka@advantech.com"'
+
+alias syncFromUpstream='git checkout main && git fetch upstream && git merge upstream/main && git push origin main'
 
 # Git
 alias my-repo='git config --global user.name "Roman Pavelka" && git config --global user.email "roman.pavelka.asi@gmail.com"'
@@ -43,3 +47,7 @@ alias timesum='/home/roman/projects/productivity/timesum/timesum.py'
 alias factorio='/home/roman/factorio/bin/x64/factorio'
 alias brave='brave-browser'
 
+# Serial link
+alias usb0-115200-8-n-1="stty -F /dev/ttyUSB0 115200 cs8 -cstopb -parenb"
+
+alias wireshark="sudo /usr/bin/wireshark"
