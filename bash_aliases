@@ -43,11 +43,17 @@ alias up="sudo apt update && sudo apt upgrade -y && sudo snap refresh"
 # Shortcuts
 alias g='/home/roman/projects/productivity/google-from-bash/google.py'
 alias gpt='/home/roman/projects/chatgpt-gui/cli.py'
+alias gpt-gui='/home/roman/projects/chatgpt-gui/gui.py'
 alias timesum='/home/roman/projects/productivity/timesum/timesum.py'
-alias factorio='/home/roman/factorio/bin/x64/factorio'
+alias factorio='/usr/share/factorio/bin/x64/factorio'
 alias brave='brave-browser'
 
 # Serial link
 alias usb0-115200-8-n-1="stty -F /dev/ttyUSB0 115200 cs8 -cstopb -parenb"
 
 alias wireshark="sudo /usr/bin/wireshark"
+suspend_in () {
+  sleep "$1"m && systemctl suspend -i
+}
+
+alias cam='kamoso'
