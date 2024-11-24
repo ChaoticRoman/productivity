@@ -44,6 +44,9 @@ alias up="sudo apt update && sudo apt upgrade -y && sudo snap refresh"
 alias g='/home/roman/projects/productivity/google-from-bash/google.py'
 alias gpt='/home/roman/projects/chatgpt-gui/cli.py'
 alias gpt-gui='/home/roman/projects/chatgpt-gui/gui.py'
+alias whisper='/home/roman/projects/chatgpt-gui/whisper.py'
+alias yta='yt-dlp -x --audio-format mp3'
+
 alias timesum='/home/roman/projects/productivity/timesum/timesum.py'
 alias factorio='/usr/share/factorio/bin/x64/factorio'
 alias brave='brave-browser'
