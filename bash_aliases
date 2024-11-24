@@ -60,3 +60,4 @@ suspend_in () {
 }
 
 alias cam='kamoso'
+alias cut_audio='/home/roman/projects/productivity/cut_audio.sh'
