@@ -25,20 +25,18 @@ alias removeAllContainers='docker rm $(docker ps -a -q)'
 alias pruneImages='docker system prune'
 alias pruneImagesHard='docker system prune -a'
 
+# Git
+alias my-repo='git config user.name "Roman Pavelka" && git config user.email "roman.pavelka.asi@gmail.com"'
+alias work-repo='git config user.name "Roman Pavelka" && git config user.email "roman.pavelka@advantech.cz"'
+alias syncWithUpstream='git checkout main && git fetch upstream && git merge upstream/main && git push origin main'
+
 # GitHub
 alias gh-repo-lazy='git init && git add . && git commit && gh repo create $(basename $(pwd)) --public --source=. --push --remote=upstream'
 alias gh-repo='gh repo create $(basename $(pwd)) --public --source=. --push --remote=origin'
 alias gh-pr='gh pr create'
-alias privaterepo='git config user.email "roman.pavelka.asi@gmail.com"'
-alias workrepo='git config user.email "roman.pavelka@advantech.com"'
-
-alias syncFromUpstream='git checkout main && git fetch upstream && git merge upstream/main && git push origin main'
-
-# Git
-alias my-repo='git config --global user.name "Roman Pavelka" && git config --global user.email "roman.pavelka.asi@gmail.com"'
 
 # OS
-alias up="sudo apt update && sudo apt upgrade -y && sudo snap refresh"
+alias up="sudo apt update && sudo apt upgrade -y"
 
 # Shortcuts
 alias g='/home/roman/projects/productivity/google-from-bash/google.py'
@@ -46,18 +44,30 @@ alias gpt='/home/roman/projects/chatgpt-gui/cli.py'
 alias gpt-gui='/home/roman/projects/chatgpt-gui/gui.py'
 alias whisper='/home/roman/projects/chatgpt-gui/whisper.py'
 alias yta='yt-dlp -x --audio-format mp3'
-
-alias timesum='/home/roman/projects/productivity/timesum/timesum.py'
 alias factorio='/usr/share/factorio/bin/x64/factorio'
 alias brave='brave-browser'
-
-# Serial link
+alias cam='kamoso'
+alias cut_audio='/home/roman/projects/productivity/cut_audio.sh'
+alias timesum='/home/roman/projects/productivity/timesum/timesum.py'
+alias wireshark="sudo /usr/bin/wireshark"
 alias usb0-115200-8-n-1="stty -F /dev/ttyUSB0 115200 cs8 -cstopb -parenb"
 
-alias wireshark="sudo /usr/bin/wireshark"
+# Nice colors for terminal
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[0;33m'
+
+ON_RED='\033[41m'
+
+NO_COLOR='\033[0m'
+
+alias bang='echo -e "${ON_RED}BANG!${NO_COLOR}"'
+
 suspend_in () {
   sleep "$1"m && systemctl suspend -i
 }
 
-alias cam='kamoso'
-alias cut_audio='/home/roman/projects/productivity/cut_audio.sh'
+# Irrelevant outside single machine or environment
+if [ -f ~/.local_aliases ]; then
+    . ~/.local_aliases
+fi
