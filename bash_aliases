@@ -1,4 +1,5 @@
 alias a='nano ~/.bash_aliases && . ~/.bash_aliases'
+alias la='nano ~/.local_aliases && . ~/.local_aliases'
 
 # Files and dirs
 alias ..='cd ..'
